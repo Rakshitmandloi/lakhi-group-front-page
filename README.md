@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lakhi Group - Pure Brilliance Website
+
+A sophisticated, story-driven B2B diamond company website featuring cutting-edge 3D graphics, smooth animations, and modern design.
+
+## Features
+
+- **3D Interactive Background**: Beautiful diamond animations that respond to scroll
+- **Glass Morphism UI**: Modern, elegant design with backdrop blur effects
+- **Story-Driven Sections**: Five key "Pure" sections showcasing company values
+- **Smooth Animations**: GSAP and Framer Motion for premium interactions
+- **Responsive Design**: Perfect on all devices from mobile to desktop
+- **Performance Optimized**: Efficient 3D rendering with adaptive quality
+
+## Technology Stack
+
+- **Next.js 14** - React framework with App Router
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first styling
+- **Three.js** - 3D graphics and animations
+- **@react-three/fiber** - React renderer for Three.js
+- **@react-three/drei** - Useful helpers for React Three Fiber
+- **Framer Motion** - Advanced animations
+- **GSAP** - Professional-grade animations
+- **Lucide React** - Beautiful icons
 
 ## Getting Started
 
-First, run the development server:
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+2. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+3. **Open your browser:**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## Project Structure
+
+```
+app/
+├── components/
+│   ├── ThreeDBackground.tsx    # Interactive 3D diamond background
+│   ├── Navigation.tsx          # Modern glass navigation
+│   ├── HeroSection.tsx         # Hero with animated stats
+│   ├── StorySection.tsx        # Five "Pure" story sections
+│   ├── GlassCard.tsx          # Reusable glass morphism card
+│   └── AnimateOnScroll.tsx    # GSAP scroll animations
+├── globals.css                 # Global styles and utilities
+├── layout.tsx                  # Root layout with metadata
+└── page.tsx                    # Main page composition
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Design Philosophy
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Inspired by the concept of "Pure" excellence, this website elevates the traditional diamond industry website with:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Pure Excellence**: Uncompromising quality and precision
+- **Pure Craft**: Innovation meeting tradition
+- **Pure Innovation**: Technology-driven future
+- **Pure Responsibility**: Ethical excellence and sustainability
+- **Pure Careers**: Growing together as a team
 
-## Learn More
+## Performance
 
-To learn more about Next.js, take a look at the following resources:
+- Adaptive 3D quality based on device capabilities
+- Optimized bundle size with code splitting
+- Smooth 60fps animations
+- Responsive images and lazy loading
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This website is ready for deployment on:
+- Vercel (recommended)
+- Netlify
+- AWS Amplify
+- Any platform supporting Next.js
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+© 2024 Lakhi Group. All rights reserved.
