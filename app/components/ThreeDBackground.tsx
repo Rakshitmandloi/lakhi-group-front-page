@@ -192,18 +192,48 @@ function DiamondField({ smoothScrollProgress, isLightMode }: { smoothScrollProgr
       }
     });
     
-    // Add some scattered diamonds
-    for (let i = 0; i < 20; i++) {
+    // Add mid-range diamonds for better depth layering
+    for (let i = 0; i < 80; i++) {
       temp.push({
         position: [
-          (Math.random() - 0.5) * 60,
-          (Math.random() - 0.5) * 40,
-          -20 - Math.random() * 60
+          (Math.random() - 0.5) * 90,   // Medium spread
+          (Math.random() - 0.5) * 60,   // Medium height
+          -10 - Math.random() * 80      // Medium depth
         ] as [number, number, number],
-        scale: 0.05 + Math.random() * 0.1,
+        scale: 0.04 + Math.random() * 0.08,
+        rotationSpeed: 0.08 + Math.random() * 0.25,
+        size: 'small' as const,
+        id: 500 + i
+      });
+    }
+    
+    // Add many scattered diamonds to fill the entire space
+    for (let i = 0; i < 150; i++) {
+      temp.push({
+        position: [
+          (Math.random() - 0.5) * 120,  // Much wider spread
+          (Math.random() - 0.5) * 80,   // Much taller spread
+          -20 - Math.random() * 120     // Much deeper spread
+        ] as [number, number, number],
+        scale: 0.03 + Math.random() * 0.08,  // Slightly smaller for distance effect
         rotationSpeed: 0.1 + Math.random() * 0.3,
         size: 'small' as const,
         id: 1000 + i
+      });
+    }
+    
+    // Add even more tiny distant diamonds for depth
+    for (let i = 0; i < 100; i++) {
+      temp.push({
+        position: [
+          (Math.random() - 0.5) * 200,  // Very wide spread
+          (Math.random() - 0.5) * 120,  // Very tall spread
+          -100 - Math.random() * 150    // Very far back
+        ] as [number, number, number],
+        scale: 0.01 + Math.random() * 0.04,  // Very tiny for far distance
+        rotationSpeed: 0.05 + Math.random() * 0.2,
+        size: 'small' as const,
+        id: 2000 + i
       });
     }
     

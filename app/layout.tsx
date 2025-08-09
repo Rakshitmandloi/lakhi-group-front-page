@@ -31,7 +31,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body className={geistSans.className}>
+      <body 
+        className={geistSans.className}
+        style={{
+          margin: 0,
+          padding: 0,
+          width: '100vw',
+          height: '100vh',
+          overflow: 'hidden',
+          fontFamily: 'system-ui, -apple-system, sans-serif'
+        }}
+      >
         {children}
       </body>
     </html>

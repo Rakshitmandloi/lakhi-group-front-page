@@ -3,7 +3,7 @@
 
 import ThreeDBackground from './components/ThreeDBackground';
 import HeroSection from './components/HeroSection_New';
-
+import FloatingNav from './components/FloatingNav_New';
 
 export default function Home() {
   return (
@@ -13,6 +13,9 @@ export default function Home() {
       height: '100vh',
       overflow: 'hidden' 
     }}>
+      {/* Floating Navigation */}
+      <FloatingNav />
+
       {/* 1. The 3D background sits at the bottom layer */}
       <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
         <ThreeDBackground />
@@ -29,7 +32,6 @@ export default function Home() {
         justifyContent: 'center'
       }}>
         <HeroSection />
-    
       </div>
     </main>
   );
